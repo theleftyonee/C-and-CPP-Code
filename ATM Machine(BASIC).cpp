@@ -14,23 +14,25 @@ int main(){
 	return 0;
 }
 	printf("Choose the operation you want to perform:\n");
-	printf(" 1. Cash Withdrawal\n 2. Balance Inquiry\n 3. Mini Payment\n 4. Net Banking Registration\n");
+	printf(" 1. Cash Withdrawal\n 2. Balance Inquiry\n 3. Mini Statement\n 4. Net Banking Registration\n");
 	scanf("%d",&a);
 		if (a==2){
 			printf("Your current balance is Rs. 1,00,000 only.");
 			return 0;
 		}
 	if (a==4){
-		printf("Please visit our bank website for the registration. The website is www.BigBank.in");
+		printf("Please visit our bank website for the registration. The website is www.BigBank.in\n");
+		printf("Thankyou! Please visit again! \n");
+		return 0;
 	}
 	if (a==1) {
-		printf("From which account do you want to withdraw money:\n");
+		printf("Select the account from which you want to withdraw money:\n");
 	}
 	else {
 		printf("The service you selected is not currently operational\n");
 		return 0;
 	}
-	    printf("1. Credit\n");
+	        printf("1. Credit\n");
 		printf("2. Savings\n");
 		printf("3. Current\n");
 		scanf("%d", &z);
